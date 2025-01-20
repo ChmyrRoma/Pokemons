@@ -5,7 +5,7 @@ import { favoritePokemonsSliceActions } from "../reducers/favoritePokemons.ts";
 import { api, IFetchPokemonsDto } from "../rest/api";
 import { IPokemonsTypes } from "../../types";
 
-export const fetchPokemons = createAsyncThunk<IFetchPokemonsDto>(
+export const fetchPokemons = createAsyncThunk(
     'pokemons/fetchPokemons',
     async (params: IFetchPokemonsDto, thunkAPI) => {
     const response = await api.getPokemons(params);
