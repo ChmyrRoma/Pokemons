@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+    border-bottom: 1px solid silver;
+
+    &__link {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            color: #444343;
+        }
+
+        &_noActive {
+            color: black;
+        }
+
+        &_active {
+            color: green;
+        }
+    }
+}
